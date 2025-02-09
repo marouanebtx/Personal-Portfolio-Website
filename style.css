@@ -78,7 +78,21 @@ body {
       display: none; /* Hide the hamburger icon on desktop */
     }
   }
-  
+
+  /* Language Switcher */
+  .language-switch {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #002F58;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.language-switch:hover {
+    background-color: #0056b3;
+}
+
   /* Header Section Styles */
 header {
     background-color: #002F58;
@@ -202,7 +216,7 @@ header {
 @media (max-width: 768px) {
     .header-content {
       flex-direction: column;
-      text-align: center;
+      text-align: left; /* default center ------------ */
       gap: 20px; /* Reduce the gap between elements */
     }
   
