@@ -12,10 +12,10 @@ Welcome to my portfolio website! This project showcases my work, skills, and exp
 - **GitHub Pages** (for deployment)
 
 ## 🚀 Live Demo
-Check out my portfolio here: [Your Portfolio Link]
+Check out my portfolio here: https://marouanebtx.github.io/Personal-Portfolio-Website/index.html
 
 ## 📬 Contact
-Feel free to reach out to me via [your email] or connect on [LinkedIn/GitHub].
+Feel free to reach out to me via marouanebtx@gmail.com.
 
 ---
 ✨ *Thank you for visiting my portfolio!*
