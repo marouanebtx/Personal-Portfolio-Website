@@ -1,217 +1,338 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marouanebtx | Portfolio</title>
-  <link rel="stylesheet" href="../style.css">
-  <script src="../script.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- Navbar -->
-<nav class="topnav">
-    <div class="container">
-      <!-- Logo -->
-      <a href="#home" class="active logo">MAROUANEBT</a>
-      <!-- Nav hidden by default -->
-      <div id="myLinks">
-        <a href="#about">Über</a>
-        <a href="#education">Bildung</a>
-        <a href="#certifications">Zertifikate</a>
-        <a href="#projects">Projekte</a>
-        <a href="#skills">Kenntnisse</a>
-        <a href="#contact">Kontakt</a>
-        <!-- Lang Switcher -->
-        <a href="../index.html" class="language-switch">EN</a>
-      </div>
-      <!-- Hamburger menu icon -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-  </nav>
-
-  <!-- Header Section -->
-  <header>
-    <div class="container">
-      <div class="header-content">
-        <!-- Text Content -->
-        <div class="header-text">
-          <h1>Hallo, Ich Bin <span>Marouane Bouzarouata</span></h1>
-          <p>IT-Infrastruktur und Cloud Computing Spezialist</p>
-          <div class="header-buttons">
-            <a href="https://drive.google.com/file/d/1IlKAxJpGZeGRmfna7QtJlaTp9XOk8DYj/view" target="_blank" download class="btn">Lebenslauf</a>
-            <a href="#contact" class="btn btn-outline">Kontakt</a>
-          </div>
-          <!-- Social Media Icons -->
-          <div class="social-icons">
-            <a href="https://linkedin.com/in/marouanebtx" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/marouanebtx" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://instagram.com/marouane_bt9" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marouanebtx - Portfolio</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img
+            href="#home"
+            src="../assets/images/logo.png"
+            alt="Logo"
+            draggable="false"
+          />
         </div>
-        <!-- Profile Photo -->
-        <div class="header-photo">
-          <img src="../assets/images/img.png" draggable="false" alt="Marouane Bouzarouata">
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links">
+          <li><a href="#about">Über</a></li>
+          <li><a href="#education">Bildung</a></li>
+          <li><a href="#certifications">Zertifikate</a></li>
+          <li><a href="#projects">Projekte</a></li>
+          <li><a href="#skills">Kenntnisse</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="../index.html" class="language-switch">EN</a></li>
+        </ul>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
         </div>
       </div>
-    </div>
-  </header>
+    </nav>
 
-  <!-- About Me Section -->
-  <section id="about">
-    <div class="container">
-      <h2>Über mich</h2>
-      <div class="about-box">
-        <p>
-          Hallo, ich bin Marouane Bouzarouata, ein IT-Infrastruktur- und Cloud-Computing-Spezialist
-          mit einer starken Grundlage in Microsoft Azure, Netzwerktechnik und Systemsicherheit. 
-          Ich bin leidenschaftlich daran interessiert, effiziente und sichere digitale Umgebungen.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-<section id="education">
-    <div class="container">
-      <h2>Bildung</h2>
-      <div class="timeline">
-        <!-- Timeline Item 1 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3 class="timeline-h3-1">Ausbildung in Digitale Infrastruktur Fachrichtung Cloud Computing</h3>
-            <p>ISTAG Bab Tizimi, Meknes</p>
-            <p>2021 - 2023</p>
-          </div>
-        </div>
-        <!-- Timeline Item 2 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3 class="timeline-h3-2">Abitur in Elektrotechnik - Studiengang Industrielle Instandhaltung</h3>
-            <p>Gymnasium Moulay Ismail, Meknes</p>
-            <p>2017 - 2021</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Certifications Section -->
-  <section id="certifications">
-    <div class="container">
-      <h2>Zertifikate</h2>
-      <div class="certifications-grid">
-        <!-- Certification 1 -->
-        <div class="certification-item">
-          <img src="assets/certificate-icon.svg" draggable="false" alt="Certificate Icon" class="certificate-icon">
-          <h3>Web Development Fundamentals</h3>
-          <p>Ausgestellt von IBM</p>
-          <p>Feb 2025</p>
-          <a href="https://www.credly.com/badges/b5a7c1ba-bb8e-4119-8403-4d48468b478b/public_url" target="_blank" class="btn">Badge Ansehen</a>
-        </div>
-        <!-- Certification 2 -->
-        <div class="certification-item">
-          <img src="assets/certificate-icon.svg" draggable="false" alt="Certificate Icon" class="certificate-icon">
-          <h3>Cloud Computing Fundamentals</h3>
-          <p>Ausgestellt von IBM</p>
-          <p>Feb 2025</p>
-          <a href="https://www.credly.com/badges/ae4f0cfd-a705-4a0e-83b1-bb63f7e38b4b/linked_in_profile" target="_blank" class="btn">Badge Ansehen</a>
-        </div>
-        <!-- Certification 3 -->
-        <div class="certification-item">
-          <img src="assets/certificate-icon.svg" draggable="false" alt="Certificate Icon" class="certificate-icon">
-          <h3>Computer Hardware Basics</h3>
-          <p>Ausgestellt von Cisco</p>
-          <p>Dez 2024</p>
-          <a href="https://www.credly.com/badges/b18527cd-73a9-4b22-8a39-60929e27932d/linked_in_profile" target="_blank" class="btn">Badge Ansehen</a>
-        </div>
-        <!-- Certification 4 -->
-        <div class="certification-item">
-          <img src="assets/certificate-icon.svg" draggable="false" alt="Certificate Icon" class="certificate-icon">
-          <h3>NDG Linux Unhatched</h3>
-          <p>Ausgestellt von Network Development Group</p>
-          <p>Jan 2023</p>
-          <a href="https://www.credly.com/badges/your-badge-id-3" target="_blank" class="btn">Badge Ansehen</a>
-        </div>
-        <!-- Certification 5 -->
-        <div class="certification-item">
-          <img src="assets/certificate-icon.svg" draggable="false" alt="Certificate Icon" class="certificate-icon">
-          <h3>CCNA: Introduction to Networks</h3>
-          <p>Ausgestellt von Cisco</p>
-          <p>Mar 2022</p>
-          <a href="https://www.credly.com/badges/6ef536fc-aa2e-424a-8e2b-d942b1fd8485/linked_in_profile" target="_blank" class="btn">Badge Ansehen</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2>Projecte</h2>
-      <div class="project">
-        <h3>Persönliche Portfolio-Website</h3>
-        <i>Verwendete Technologien: [HTML, CSS, JavaScript, GitHub]</i>
-        <p>- Entwicklung einer responsiven Portfolio-Website zur Präsentation von Fähigkeiten und Projekten.</p>
-        <p>- Versionsverwaltung und Code-Hosting über GitHub für effizientes Projektmanagement.</p>
-        <p>- Deployment der Website über GitHub Pages für kostenfreie Bereitstellung</p>
-        <br>
-        <a href="https://github.com/marouanebtx/Personal-Portfolio-Website" target="_blank">Github Repo</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2>Kenntnisse</h2>
-      <ul>
-        <li>Microsoft Azure</li>
-        <li>OpenStack</li>
-        <li>Cloud Security</li>
-        <li>Virtualisierung</li>
-        <li>System Administration</li>
-        <li>Debian Linux</li>
-        <li>Docker</li>
-        <li>MySQL</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git | Github</li>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-links">
+        <li><a href="#about">Über</a></li>
+        <li><a href="#education">Bildung</a></li>
+        <li><a href="#certifications">Zertifikate</a></li>
+        <li><a href="#projects">Projekte</a></li>
+        <li><a href="#skills">Kenntnisse</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+        <li><a href="../index.html" class="language-switch">DE</a></li>
       </ul>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2><strong>Kontakt</strong></h2>
-      <div class="contact-box">
-        <!-- Email -->
-        <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <p><a href="mailto:marouanebtx@outlook.com">marouanebtx@outlook.com</a></p>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <!-- Text Content -->
+          <div class="header-text">
+            <h1>Hallo, Ich Bin <span>Marouane Bouzarouata</span></h1>
+            <p>IT-Infrastruktur und Cloud Computing Spezialist</p>
+            <div class="header-buttons">
+              <a
+                href="https://drive.google.com/file/d/1-14SrjqfgYoAujUqdqFUt87D3fWtxjKQ/view"
+                target="_blank"
+                download
+                class="btn"
+                >Lebenslauf</a
+              >
+              <a href="#contact" class="btn btn-outline">Kontakt</a>
+            </div>
+            <!-- Social Media -->
+            <div class="social-icons">
+              <a href="https://linkedin.com/in/marouanebtx" target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/marouanebtx" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://instagram.com/marouane_bt9" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Photo -->
+          <div class="header-photo">
+            <img
+              src="../assets/images/img.png"
+              draggable="false"
+              alt="Marouane Bouzarouata"
+            />
+          </div>
         </div>
-        <!-- LinkedIn -->
-        <div class="contact-item">
-          <i class="fab fa-linkedin"></i>
-          <p><a href="https://linkedin.com/in/marouanebtx" target="_blank">LinkedIn</a></p>
+      </div>
+    </header>
+
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <h2>Über mich</h2>
+        <div class="about-box">
+          <p>
+            Hallo, ich bin Marouane Bouzarouata, ein IT-Infrastruktur- und
+            Cloud-Computing-Spezialist mit einer starken Grundlage in Microsoft
+            Azure, Netzwerktechnik und Systemsicherheit. Ich bin
+            leidenschaftlich daran interessiert, effiziente und sichere digitale
+            Umgebungen.
+          </p>
         </div>
       </div>
     </div>
-  </section>
-</body>
+
+    <!-- Education -->
+    <div id="education">
+      <div class="container">
+        <h2>Bildung</h2>
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-h3-1">
+                Ausbildung in Digitale Infrastruktur Fachrichtung Cloud
+                Computing
+              </h3>
+              <p>ISTAG Bab Tizimi, Meknes</p>
+              <p>2021 - 2023</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-h3-2">
+                Abitur in Elektrotechnik - Studiengang Industrielle
+                Instandhaltung
+              </h3>
+              <p>Gymnasium Moulay Ismail, Meknes</p>
+              <p>2017 - 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div id="certifications">
+      <div class="container">
+        <h2>Zertifikate</h2>
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <div class="certification-item">
+            <img
+              src="../assets/icons/certificate-icon.svg"
+              draggable="false"
+              alt="Certificate Icon"
+              class="certificate-icon"
+            />
+            <h3>Web Development Fundamentals</h3>
+            <p>Ausgestellt von IBM</p>
+            <p>Feb 2025</p>
+            <a
+              href="https://www.credly.com/badges/b5a7c1ba-bb8e-4119-8403-4d48468b478b/public_url"
+              target="_blank"
+              class="btn"
+              >Badge Ansehen</a
+            >
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="certification-item">
+            <img
+              src="../assets/icons/certificate-icon.svg"
+              draggable="false"
+              alt="Certificate Icon"
+              class="certificate-icon"
+            />
+            <h3>Cloud Computing Fundamentals</h3>
+            <p>Ausgestellt von IBM</p>
+            <p>Feb 2025</p>
+            <a
+              href="https://www.credly.com/badges/ae4f0cfd-a705-4a0e-83b1-bb63f7e38b4b/linked_in_profile"
+              target="_blank"
+              class="btn"
+              >Badge Ansehen</a
+            >
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="certification-item">
+            <img
+              src="../assets/icons/certificate-icon.svg"
+              draggable="false"
+              alt="Certificate Icon"
+              class="certificate-icon"
+            />
+            <h3>Computer Hardware Basics</h3>
+            <p>Ausgestellt von Cisco</p>
+            <p>Dez 2024</p>
+            <a
+              href="https://www.credly.com/badges/b18527cd-73a9-4b22-8a39-60929e27932d/linked_in_profile"
+              target="_blank"
+              class="btn"
+              >Badge Ansehen</a
+            >
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="certification-item">
+            <img
+              src="../assets/icons/certificate-icon.svg"
+              draggable="false"
+              alt="Certificate Icon"
+              class="certificate-icon"
+            />
+            <h3>NDG Linux Unhatched</h3>
+            <p>Ausgestellt von Network Development Group</p>
+            <p>Jan 2023</p>
+            <a href="https://www.credly.com/" target="_blank" class="btn"
+              >Badge Ansehen</a
+            >
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="certification-item">
+            <img
+              src="../assets/icons/certificate-icon.svg"
+              alt="Certificate Icon"
+              class="certificate-icon"
+            />
+            <h3>CCNA: Introduction to Networks</h3>
+            <p>Ausgestellt von Cisco</p>
+            <p>Mar 2022</p>
+            <a
+              href="https://www.credly.com/badges/6ef536fc-aa2e-424a-8e2b-d942b1fd8485/linked_in_profile"
+              target="_blank"
+              class="btn"
+              >Badge Ansehen</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects">
+      <div class="container">
+        <h2>Projecte</h2>
+        <div class="project">
+          <h3>Persönliche Portfolio-Website</h3>
+          <i>Verwendete Technologien: [HTML, CSS, JavaScript, GitHub]</i>
+          <p>
+            - Entwicklung einer responsiven Portfolio-Website zur Präsentation
+            von Fähigkeiten und Projekten.
+          </p>
+          <p>
+            - Versionsverwaltung und Code-Hosting über GitHub für effizientes
+            Projektmanagement.
+          </p>
+          <p>
+            - Deployment der Website über GitHub Pages für kostenfreie
+            Bereitstellung
+          </p>
+          <br />
+          <a
+            class="btn"
+            href="https://github.com/marouanebtx/Personal-Portfolio-Website"
+            target="_blank"
+            >Github Repo</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills" class="skills">
+      <div class="container">
+        <h2>Kenntnisse</h2>
+        <ul>
+          <li>Microsoft Azure</li>
+          <li>OpenStack</li>
+          <li>Cloud Security</li>
+          <li>Virtualisation</li>
+          <li>System Administration</li>
+          <li>Debian Linux</li>
+          <li>Docker</li>
+          <li>MySQL</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git | Github</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <h2><strong>Kontakt</strong></h2>
+        <div class="contact-box">
+          <!-- Email -->
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>
+              <a href="mailto:marouanebtx@outlook.com"
+                >marouanebtx@outlook.com</a
+              >
+            </p>
+          </div>
+          <!-- LinkedIn -->
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <p>
+              <a href="https://linkedin.com/in/marouanebtx" target="_blank"
+                >LinkedIn</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
   <!-- Footer -->
-<footer>
-  <div class="container">
-    <p>&copy; 2025 Marouane Bouzarouata.</p>
-  </div>
-</footer>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Marouane Bouzarouata.</p>
+    </div>
+  </footer>
 </html>
