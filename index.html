@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marouanebtx | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="assets/images/hero-pic/favicon.png"
+      type="image/png"
+    />
+    <title>Marouanebtx | Azure Admin</title>
+    <link rel="stylesheet" href="css/style.css" />
     <script src="script.js" defer></script>
     <link
       rel="stylesheet"
@@ -21,10 +26,8 @@
     <nav class="navbar">
       <div class="container">
         <div class="logo">
-          <img href="#home" src="assets/images/logo.png" alt="Logo" />
+          <a href="#home">< Mbt /></a>
         </div>
-
-        <!-- Desktop Navigation -->
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#education">Education</a></li>
@@ -32,16 +35,14 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="de/index.html" class="language-switch">DE</a></li>
+          <!-- <li><a href="de/index-de.html" class="language-switch">DE</a></li> -->
         </ul>
-
         <!-- Mobile Menu Toggle -->
         <div class="hamburger" id="hamburger">
           <i class="fas fa-bars"></i>
         </div>
       </div>
     </nav>
-
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
       <ul class="mobile-links">
@@ -51,18 +52,23 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="de/index.html" class="language-switch">DE</a></li>
+        <!-- <li><a href="de/index.html" class="language-switch">DE</a></li> -->
       </ul>
     </div>
 
     <!-- Header Section -->
-    <header>
+    <header id="home">
       <div class="container">
-        <div class="header-content">
-          <!-- Text Content -->
-          <div class="header-text">
-            <h1>Hello, I'm <span>Marouane Bouzarouata</span></h1>
-            <p>IT Infrastructure and Cloud Computing Specialist</p>
+        <!-- Text Content -->
+        <div class="header-text" id="logo">
+          <span class="hello">Hello</span>
+          <h1><span>I'm</span> Marouane <br />Bouzarouata</h1>
+          <h3>Azure Cloud Administrator</h3>
+          <p>
+            I specialize in deploying, managing, and securing cloud
+            infrastructure using Azure services
+          </p>
+          <div class="header-contact">
             <div class="header-buttons">
               <a
                 href="https://drive.google.com/file/d/1-14SrjqfgYoAujUqdqFUt87D3fWtxjKQ/view"
@@ -81,43 +87,44 @@
               <a href="https://github.com/marouanebtx" target="_blank"
                 ><i class="fab fa-github"></i
               ></a>
-              <a href="https://instagram.com/marouane_bt9" target="_blank"
-                ><i class="fab fa-instagram"></i
+              <a href="mailto:marouanebouzarouataa@gmail.com" target="_blank"
+                ><i class="fa-solid fa-envelope"></i
               ></a>
             </div>
           </div>
-          <!-- Photo -->
-          <div class="header-photo">
-            <img
-              src="assets/images/img.png"
-              draggable="false"
-              alt="Marouane Bouzarouata"
-            />
-          </div>
+        </div>
+        <!-- Photo -->
+        <div class="header-photo">
+          <img
+            src="assets/images/hero-pic/img.png"
+            draggable="false"
+            alt="Marouane Bouzarouata"
+          />
         </div>
       </div>
     </header>
 
     <!-- About -->
-    <div id="about">
+    <div class="about" id="about">
       <div class="container">
-        <h2>About Me</h2>
+        <h2 class="main-title">About Me</h2>
         <div class="about-box">
           <p>
-            Hi, I'm Marouane Bouzarouata, an IT Infrastructure and Cloud
-            Computing Specialist with a strong foundation in Microsoft AZURE,
-            networking and system security. Passionate about building efficient
-            and secure digital environments. I'm eager to contribute to
-            innovative projects and grow my skills in the cloud industry.
+            Hi, I'm Marouane Bouzarouata, an Azure Cloud Administrator with a
+            strong foundation in Microsoft Azure, Networking, and System
+            Administration. I specialize in deploying, managing, and securing
+            cloud infrastructure using Azure services. My expertise includes
+            configuring virtual networks, managing identities with Azure AD, and
+            monitoring resources to ensure high availability and performance.
           </p>
         </div>
       </div>
     </div>
 
     <!-- Education -->
-    <div id="education">
+    <div class="education" id="education">
       <div class="container">
-        <h2>Education</h2>
+        <h2 class="main-title">Education</h2>
         <div class="timeline">
           <!-- Item 1 -->
           <div class="timeline-item">
@@ -127,8 +134,13 @@
                 Technicien Spécialisé en Infrastructure Digital option Cloud
                 Computing
               </h3>
-              <p>ISTAG Bab Tizimi, Meknes</p>
-              <p>2021 - 2023</p>
+              <p class="school">OFPPT Bab Tizimi Meknes</p>
+              <p class="date">sept 2021 - Jul 2023</p>
+              <p class="desc">
+                Comprehensive training in IT skills, including Networking, Cloud
+                Computing (Microsoft Azure), Database Management, and Hardware
+                troubleshooting.
+              </p>
             </div>
           </div>
           <!-- Item 2 -->
@@ -138,165 +150,300 @@
               <h3 class="timeline-h3-2">
                 Baccalauréat Professionnel en Maintenance Industrielle
               </h3>
-              <p>Moulay Ismail Meknes</p>
-              <p>2017 - 2021</p>
+              <p class="school">Moulay Ismail High School</p>
+              <p class="date">sept 2017 - Jul 2021</p>
+              <!-- <p class="desc">
+                Comprehensive training in IT skills, including Networking, Cloud
+                Computing (Microsoft Azure), Database Management, and Hardware
+                troubleshooting.
+              </p> -->
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Certifications -->
-    <div id="certifications">
+    <!-- Projects -->
+    <div class="projects" id="projects">
+      <h2 class="main-title">Projects</h2>
       <div class="container">
-        <h2>Certifications</h2>
+        <div class="box">
+          <img
+            src="assets/images/projects-icons/Azure.png"
+            alt=""
+            draggable="false"
+          />
+          <h3>Azure Governance Project</h3>
+          <div class="pro-skills">
+            <span>Managment Group</span>
+            <span>Entra ID</span>
+            <span>Azure Policy</span>
+            <span>RBAC</span>
+          </div>
+          <p>
+            Designed a full-featured Azure governance structure to simulate
+            enterprise-grade cloud control. This project enforces secure
+            role-based access, resource standardization, and cost tracking using
+            management groups
+          </p>
+          <div class="view">
+            <a
+              href="https://github.com/marouanebtx/azure-governance-project"
+              target="_blank"
+            >
+              View Project
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="assets/images/projects-icons/website.png"
+            alt=""
+            draggable="false"
+          />
+          <h3>Portfolio Website</h3>
+          <div class="pro-skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Github</span>
+          </div>
+          <p>
+            Developed a responsive personal portfolio website using HTML, CSS,
+            and JavaScript. Hosted the project on GitHub Pages, showcasing my
+            skills, certifications, and cloud-related projects in a clean,
+            user-friendly layout.
+          </p>
+          <div class="view">
+            <a
+              href="https://github.com/marouanebtx/Personal-Portfolio-Website"
+              target="_blank"
+            >
+              View Project
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Projects -->
+
+    <!-- Start Certifications -->
+    <div class="certifications" id="certifications">
+      <div class="container">
+        <h2 class="main-title">Certifications</h2>
         <div class="certifications-grid">
           <!-- Cert 1 -->
           <div class="certification-item">
-            <img
-              src="assets/icons/certificate-icon.svg"
-              draggable="false"
-              alt="Certificate Icon"
-              class="certificate-icon"
-            />
-            <h3>Web Development Fundamentals</h3>
-            <p>Issued by IBM</p>
-            <p>Feb 2025</p>
-            <a
-              href="https://www.credly.com/badges/b5a7c1ba-bb8e-4119-8403-4d48468b478b/public_url"
-              target="_blank"
-              class="btn"
-              >View Badge</a
-            >
+            <div class="image">
+              <img src="assets/images/Certi/SysAdmin.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>System Administration</h3>
+              <p>Issued by Linkedin & Microsoft</p>
+              <p>April 2025</p>
+              <a
+                href="https://www.credly.com/badges/b5a7c1ba-bb8e-4119-8403-4d48468b478b/public_url"
+                target="_blank"
+                class="btn"
+                >View Badge <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
           </div>
-
+          <!-- Cert 1 -->
+          <div class="certification-item">
+            <div class="image">
+              <img src="assets/images/Certi/web-dev-01.png" alt="" />
+            </div>
+            <div class="info">
+              <h3>Web Development</h3>
+              <p>Issued by IBM</p>
+              <p>Feb 2025</p>
+              <a
+                href="https://www.credly.com/badges/b5a7c1ba-bb8e-4119-8403-4d48468b478b/public_url"
+                target="_blank"
+                class="btn"
+                >View Badge <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
           <!-- Cert 2 -->
           <div class="certification-item">
-            <img
-              src="assets/icons/certificate-icon.svg"
-              draggable="false"
-              alt="Certificate Icon"
-              class="certificate-icon"
-            />
-            <h3>Cloud Computing Fundamentals</h3>
-            <p>Issued by IBM</p>
-            <p>Feb 2025</p>
-            <a
-              href="https://www.credly.com/badges/ae4f0cfd-a705-4a0e-83b1-bb63f7e38b4b/linked_in_profile"
-              target="_blank"
-              class="btn"
-              >View Badge</a
-            >
+            <div class="image">
+              <img src="assets/images/Certi/cloud-ibm-01.png" alt="" />
+            </div>
+            <div class="info">
+              <h3>Cloud Computing</h3>
+              <p>Issued by IBM</p>
+              <p>Feb 2025</p>
+              <a
+                href="https://www.credly.com/badges/ae4f0cfd-a705-4a0e-83b1-bb63f7e38b4b/linked_in_profile"
+                target="_blank"
+                class="btn"
+                >View Badge <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
           </div>
-
           <!-- Cert 3 -->
           <div class="certification-item">
-            <img
-              src="assets/icons/certificate-icon.svg"
-              draggable="false"
-              alt="Certificate Icon"
-              class="certificate-icon"
-            />
-            <h3>Computer Hardware Basics</h3>
-            <p>Issued by Cisco</p>
-            <p>Dec 2024</p>
-            <a
-              href="https://www.credly.com/badges/b18527cd-73a9-4b22-8a39-60929e27932d/linked_in_profile"
-              target="_blank"
-              class="btn"
-              >View Badge</a
-            >
+            <div class="image">
+              <img src="assets/images/Certi/computer-haedware-01.png" alt="" />
+            </div>
+            <div class="info">
+              <h3>Computer Hardware Basics</h3>
+              <p>Issued by Cisco</p>
+              <p>Dec 2024</p>
+              <a
+                href="https://www.credly.com/badges/b18527cd-73a9-4b22-8a39-60929e27932d/linked_in_profile"
+                target="_blank"
+                class="btn"
+                >View Badge <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
           </div>
-
           <!-- Cert 4 -->
           <div class="certification-item">
-            <img
-              src="assets/icons/certificate-icon.svg"
-              draggable="false"
-              alt="Certificate Icon"
-              class="certificate-icon"
-            />
-            <h3>NDG Linux Unhatched</h3>
-            <p>Issued by Network Development Group</p>
-            <p>Jan 2023</p>
-            <a href="https://www.credly.com/" target="_blank" class="btn"
-              >View Badge</a
-            >
+            <div class="image">
+              <img src="assets/images/Certi/linux-01-01.png" alt="" />
+            </div>
+            <div class="info">
+              <h3>NDG Linux Unhatched</h3>
+              <p>Issued by Network Development Group</p>
+              <p>Jan 2023</p>
+              <a href="https://www.credly.com/" target="_blank" class="btn"
+                >View Badge <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
           </div>
-
           <!-- Cert 5 -->
           <div class="certification-item">
-            <img
-              src="assets/icons/certificate-icon.svg"
-              alt="Certificate Icon"
-              class="certificate-icon"
-            />
-            <h3>CCNA: Introduction to Networks</h3>
-            <p>Issued by Cisco</p>
-            <p>Mar 2022</p>
-            <a
-              href="https://www.credly.com/badges/6ef536fc-aa2e-424a-8e2b-d942b1fd8485/linked_in_profile"
-              target="_blank"
-              class="btn"
-              >View Badge</a
-            >
+            <div class="image">
+              <img src="assets/images/Certi/CCNA-01-01.png" alt="" />
+            </div>
+            <div class="info">
+              <h3>CCNA</h3>
+              <p>Issued by Cisco</p>
+              <p>Mar 2022</p>
+              <a
+                href="https://www.credly.com/badges/6ef536fc-aa2e-424a-8e2b-d942b1fd8485/linked_in_profile"
+                target="_blank"
+                class="btn"
+                >View Badge <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- End Certifications -->
 
-    <!-- Projects -->
-    <div id="projects">
+    <!-- Start New Skills -->
+    <div class="skills" id="skills">
+      <h2 class="main-title">Skills</h2>
       <div class="container">
-        <h2>Projects</h2>
-        <div class="project">
-          <h3>Personal Portfolio Website</h3>
-          <i>Technologies used: [HTML, CSS, JavaScript, GitHub]</i>
-          <p>
-            Development of a responsive portfolio website to showcase skills and
-            projects.
-          </p>
-          <p>
-            Version control and code hosting via GitHub for efficient project
-            management.
-          </p>
-          <p>Deployment of the website using GitHub Pages for free hosting.</p>
-          <br />
-          <a
-            class="btn"
-            href="https://github.com/marouanebtx/Personal-Portfolio-Website"
-            target="_blank"
-            >Github Repo</a
-          >
+        <div class="box">
+          <img
+            src="assets/images/skills-icons/Azure.png"
+            alt=""
+            draggable="false"
+          />
+          <p>Azure</p>
+        </div>
+        <div class="box">
+          <img
+            src="assets/images/skills-icons/openstack-01.png"
+            alt=""
+            draggable="false"
+          />
+          <p>Openstack</p>
+        </div>
+        <div class="box">
+          <img
+            src="assets/images/skills-icons/website.png"
+            alt=""
+            draggable="false"
+          />
+          <p>Networking</p>
+        </div>
+        <div class="box">
+          <img
+            src="assets/images/skills-icons/vmware-01.png"
+            alt=""
+            draggable="false"
+          />
+          <p>VMware</p>
+        </div>
+        <div class="box">
+          <img
+            src="assets/images/skills-icons/win-01.png"
+            alt=""
+            draggable="false"
+          />
+          <p>Windows</p>
+        </div>
+        <div class="box">
+          <img
+            src="assets/images/skills-icons/linux-01.png"
+            alt=""
+            draggable="false"
+          />
+          <p>Linux</p>
+        </div>
+        <div class="box">
+          <img
+            src="assets/images/skills-icons/CLI-01.png"
+            alt=""
+            draggable="false"
+          />
+          <p>CLI</p>
+        </div>
+        <div class="box">
+          <img
+            src="assets/images/skills-icons/html-01.png"
+            alt=""
+            draggable="false"
+          />
+          <p>HTML</p>
+        </div>
+        <div class="box">
+          <img
+            src="assets/images/skills-icons/css-01.png"
+            alt=""
+            draggable="false"
+          />
+          <p>CSS</p>
+        </div>
+        <div class="box">
+          <img
+            src="assets/images/skills-icons/javascript-01.png"
+            alt=""
+            draggable="false"
+          />
+          <p>JavaScript</p>
+        </div>
+        <div class="box">
+          <img
+            src="assets/images/skills-icons/mysql-01.png"
+            alt=""
+            draggable="false"
+          />
+          <p>MySQL</p>
+        </div>
+        <div class="box">
+          <img
+            src="assets/images/skills-icons/git-01.png"
+            alt=""
+            draggable="false"
+          />
+          <p>Git</p>
         </div>
       </div>
     </div>
-
-    <!-- Skills -->
-    <div id="skills" class="skills">
-      <div class="container">
-        <h2>Skills</h2>
-        <ul>
-          <li>Microsoft Azure</li>
-          <li>OpenStack</li>
-          <li>Cloud Security</li>
-          <li>Virtualisation</li>
-          <li>System Administration</li>
-          <li>Debian Linux</li>
-          <li>Docker</li>
-          <li>MySQL</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Git | Github</li>
-        </ul>
-      </div>
-    </div>
-
+    <!-- End New Skills -->
     <!-- Contact -->
-    <div id="contact">
+    <div class="contact" id="contact">
       <div class="container">
-        <h2><strong>Contact Me</strong></h2>
+        <h2 class="main-title"><strong>Contact Me</strong></h2>
         <div class="contact-box">
           <!-- Email -->
           <div class="contact-item">
