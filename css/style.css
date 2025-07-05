@@ -511,16 +511,15 @@ header .container {
 .projects .box .view a {
   font-size: 13px;
   text-decoration: none;
-  color: #777;
+  color: #333;
   font-weight: 500;
   display: inline-flex;
   align-items: center;
   gap: 6px;
 }
 .projects .box a i {
-  color: #777;
-  font-size: 14px;
-  color: #777;
+  color: #333;
+  font-size: 16px;
   margin-left: 6px;
 }
 .projects .box .view:hover a,
