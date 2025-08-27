@@ -986,7 +986,6 @@ header .container {
 /* Start Footer */
 footer {
   background: var(--new-black);
-  /* background: var(--blck); */
   color: var(--first-wht);
   text-align: center;
   padding: 10px 0;
@@ -999,7 +998,6 @@ footer p {
 /* End Footer */
 
 /* Start animation */
-
 @keyframes fadeIn {
   from {
     /* opacity: 0; */
@@ -1031,3 +1029,5 @@ footer p {
     transform: scale(1.05);
   }
 }
+
+/* End Animation */
