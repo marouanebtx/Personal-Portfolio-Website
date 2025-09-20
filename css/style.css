@@ -1,6 +1,5 @@
 :root {
   --section-padding: 60px;
-  --main-color: #146ef5;
   --seconday-color: #1c1c20;
   --button-padd: 10px 20px;
   --transition: 0.3s;
@@ -10,15 +9,16 @@
   --blck: #020618;
   --border-clr: #d6dff0;
   /* ---------------------- */
-  /* --new-black: #11172a; */
-  --new-black: #222222;
-  --new-black-hell: #ffffff0d;
-  /* --new-black-hell: #292d38; */
+  --main-color: #1a1d29;
+  --second-color: #262934;
+  --sky-blue: #a3c1e0;
+  --box-color: #262934;
+  --blue-grey: #b1b2b5;
+  /* ---------------------- */
+  --main-color-hell: #ffffff0d;
   --new-grey: #828996;
   --new-grey-b: #626c7d;
-  --new-green: #599692;
-  --new-green-br: #93d6d2;
-  --new-green-hell: #243747;
+  --sky-blue-hell: #243747;
   --new-white: #dfe5ec;
   --new-border-rad: 15px;
 }
@@ -45,26 +45,23 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* Small */
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
-/* Medium */
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
 }
-/* Larg */
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
 }
 .main-title {
-  color: var(--new-green);
+  color: var(--sky-blue);
   text-align: center;
   margin-top: 10px;
   margin-bottom: 80px;
@@ -86,7 +83,7 @@ body {
 
 /* Start Navbar */
 .navbar {
-  background-color: var(--new-black);
+  background-color: var(--main-color);
   position: fixed;
   width: 100%;
   top: 0;
@@ -130,11 +127,11 @@ body {
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
-  background-color: var(--new-green);
+  background-color: var(--sky-blue);
   transition: 0.3s;
 }
 .nav-links a:hover {
-  color: var(--new-green);
+  color: var(--sky-blue);
 }
 .nav-links a:hover::before {
   width: 100%;
@@ -146,7 +143,7 @@ body {
   color: var(--seconday-color);
 }
 .hamburger i {
-  color: var(--new-green);
+  color: var(--sky-blue);
 }
 .mobile-menu {
   display: none;
@@ -154,7 +151,7 @@ body {
   top: 70px;
   left: 0;
   width: 100%;
-  background-color: #2b2b2b;
+  background-color: var(--second-color);
   padding: 20px 0;
   z-index: 999;
   transform: translateY(-150%);
@@ -166,20 +163,20 @@ body {
 .mobile-links {
   list-style: none;
   padding: 0 5%;
-  background-color: #2b2b2b;
+  background-color: var(--second-color);
 }
 .mobile-links li {
   margin-bottom: 10px;
   padding: 15px 15px 15px 20px;
-
-  border-radius: 15px;
+  color: var(--sky-blue);
+  border-bottom: 1.5px solid var(--sky-blue);
 }
 .mobile-links li:hover {
-  background-color: var(--new-green-hell);
+  background-color: var(--sky-blue-hell);
 }
 .mobile-links a {
   text-decoration: none;
-  color: var(--new-green-br);
+  color: var(--sky-blue-br);
   font-weight: 500;
   font-size: 1.1rem;
 }
@@ -204,7 +201,7 @@ body {
 /* Start Header */
 header {
   padding-top: 70px;
-  background-color: var(--new-black);
+  background-color: var(--main-color);
   color: #1c1c20;
   box-shadow: 4.397px 2.642px 12px 0 rgba(118, 118, 138, 0.1);
   padding-bottom: 50px;
@@ -229,30 +226,31 @@ header .container {
 .header-text .hello {
   display: block;
   font-size: 25px;
-  color: var(--new-green);
+  color: var(--sky-blue);
   font-weight: bold;
   margin-left: 3px;
   margin-bottom: 9px;
 }
 .header-text h1 {
   color: #dfe5ec;
-  font-size: 70px;
+  font-size: 80px;
   line-height: 1;
   margin-top: 18px;
   letter-spacing: -0.05em;
   margin: 0;
   line-height: 1;
+  text-transform: uppercase;
 }
 .header-text h1 > span {
   display: inline;
   font-size: 70px;
-  color: #599692;
+  color: var(--sky-blue);
   margin-right: 10px;
   margin-bottom: 10px;
 }
 .header-text h3 {
   font-size: 30px;
-  color: #599692;
+  color: var(--sky-blue);
   margin: 10px 0;
 }
 .header-text p {
@@ -288,33 +286,33 @@ header .container {
 }
 .header-text .btn {
   display: inline-block;
-  background-color: var(--new-green-hell);
+  background-color: var(--sky-blue);
+  color: var(--main-color);
   margin-top: 10px;
   padding: 11px 18px;
   border-radius: 30px;
-  color: var(--new-green-br);
   text-decoration: none;
   transition: 0.3s;
   font-weight: 500;
 }
 .header-text .btn-outline {
   display: inline-block;
-  background-color: var(--new-black);
-  border: 1.3px solid var(--new-green-br);
+  color: var(--sky-blue);
+  background-color: var(--main-color);
+  border: 1.5px solid var(--sky-blue);
   margin-top: 10px;
-  color: var(--new-green-br);
   text-decoration: none;
   transition: 0.3s;
   border-radius: 30px;
   font-weight: 500;
 }
 .btn-outline:hover {
-  background-color: var(--new-black-hell);
+  background-color: var(--main-color-hell);
 }
 .header-photo img {
   width: 350px;
   border-radius: 50%;
-  border: 5px solid var(--new-green);
+  border: 5px solid var(--sky-blue);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 1200px) {
@@ -329,7 +327,7 @@ header .container {
   margin-top: 13.5px;
 }
 .social-icons a {
-  color: var(--new-green);
+  color: var(--sky-blue);
   font-size: 1.5em;
   transition: 0.3s;
 }
@@ -367,7 +365,7 @@ header .container {
 
 /* Start About */
 .about {
-  background-color: #1e1e1ef0;
+  background-color: var(--second-color);
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
   text-align: center;
@@ -390,7 +388,7 @@ header .container {
 .education {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
-  background: var(--new-black);
+  background: var(--main-color);
 }
 .timeline {
   position: relative;
@@ -421,12 +419,12 @@ header .container {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: var(--new-green);
-  border: 5px solid var(--new-black);
+  background: var(--sky-blue);
+  border: 5px solid var(--main-color);
 }
 
 .timeline-content {
-  background: var(--new-black-hell);
+  background: var(--box-color);
   padding: 30px;
   border-radius: 30px;
   border: 1.5px solid rgba(255, 255, 255, 0.05);
@@ -438,21 +436,23 @@ header .container {
 .timeline-h3-1,
 .timeline-h3-2 {
   margin-top: 0;
-  color: var(--new-green);
+  color: var(--sky-blue);
   font-size: 23px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .timeline-content .school {
-  color: var(--new-grey);
+  color: var(--blue-grey);
   font-weight: 500;
   margin: 5px 0;
+  font-size: 18px;
 }
 
 .timeline-content .date {
   color: var(--new-white);
   margin: 5px 0 15px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .timeline-content .desc {
@@ -487,7 +487,7 @@ header .container {
 .experience {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
-  background: var(--new-black);
+  background: var(--main-color);
   /* background: var(--first-wht); */
 }
 
@@ -520,12 +520,12 @@ header .container {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: var(--new-green);
-  border: 5px solid var(--new-black);
+  background: var(--sky-blue);
+  border: 5px solid var(--main-color);
 }
 
 .exp-content {
-  background: var(--new-black-hell);
+  background: var(--box-color);
   padding: 30px;
   border-radius: 30px;
   border: 1.5px solid rgba(255, 255, 255, 0.05);
@@ -541,19 +541,21 @@ header .container {
 }
 .exp-content h3 {
   margin-top: 0;
-  color: var(--new-green);
+  color: var(--sky-blue);
   font-size: 23px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 .exp-company {
-  color: var(--new-grey);
+  color: var(--blue-grey);
   font-weight: 500;
   margin: 5px 0;
+  font-size: 18px;
 }
 .exp-date {
   color: var(--new-white);
   margin: 5px 0 15px;
-  font-size: 15px;
+  font-size: 14px;
 }
 .exp-desc ul {
   padding-left: 20px;
@@ -567,7 +569,7 @@ header .container {
 .projects {
   padding-top: var(--section-padding);
   padding-bottom: calc(var(--section-padding) + 60px);
-  background: var(--new-black);
+  background: var(--main-color);
 }
 .projects .container {
   display: grid;
@@ -575,7 +577,7 @@ header .container {
   gap: 30px;
 }
 .projects .box {
-  background-color: var(--new-black-hell);
+  background-color: var(--box-color);
   border-radius: 30px;
   cursor: pointer;
   border: 1.5px solid rgba(255, 255, 255, 0.05);
@@ -623,10 +625,11 @@ header .container {
   margin-bottom: 12px;
   color: var(--new-white);
   font-weight: 500;
+  text-transform: uppercase;
 }
 .projects .box .pro-skills span {
-  color: var(--new-green-br);
-  background-color: var(--new-green-hell);
+  color: var(--sky-blue-br);
+  background-color: var(--sky-blue);
   font-size: 13px;
   margin-right: 5px;
   margin-bottom: 8px;
@@ -643,9 +646,9 @@ header .container {
   border-radius: 30px;
   text-decoration: none;
   transition: 0.3s;
-  color: var(--new-green-br);
-  background-color: var(--new-black-hell);
-  border: 1.2px solid var(--new-green-br);
+  color: var(--sky-blue);
+  background-color: var(--main-color-hell);
+  border: 1.5px solid var(--sky-blue);
 }
 .projects .box .view a i {
   margin-left: 5px;
@@ -660,7 +663,7 @@ header .container {
 .certifications {
   padding-top: var(--section-padding);
   padding-bottom: calc(var(--section-padding) + 60px);
-  background: var(--new-black);
+  background: var(--main-color);
 }
 .certifications-grid {
   display: grid;
@@ -670,7 +673,7 @@ header .container {
   margin: 0 auto;
 }
 .certification-item {
-  background: var(--new-black-hell);
+  background: var(--main-color-hell);
   text-align: center;
   transition: 0.5s;
   border-radius: 30px;
@@ -698,7 +701,7 @@ header .container {
 }
 .certification-item .info-holder p {
   margin: 5px 0;
-  color: var(--new-grey);
+  color: var(--blue-grey);
 }
 .certification-item .info-holder a {
   display: inline-block;
@@ -709,9 +712,9 @@ header .container {
   transition: 0.3s;
   font-size: 13px;
   font-weight: 500;
-  color: var(--new-green-br);
-  background-color: var(--new-black-hell);
-  border: 1.2px solid var(--new-green-br);
+  color: var(--sky-blue);
+  background-color: var(--main-color-hell);
+  border: 1.5px solid var(--sky-blue);
 }
 .certification-item .info-holder a i {
   margin-left: 5px;
@@ -726,7 +729,7 @@ header .container {
 .skills {
   padding-top: var(--section-padding);
   padding-bottom: calc(var(--section-padding) + 80px);
-  background-color: var(--new-black);
+  background-color: var(--main-color);
 }
 .skills .container {
   display: grid;
@@ -735,9 +738,9 @@ header .container {
 }
 .skills .box {
   text-align: center;
-  background-color: var(--new-black);
+  background-color: var(--main-color);
   padding: 15px 20px;
-  border-radius: 30px;
+  border-radius: 50px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1.5px solid var(--new-grey);
   cursor: pointer;
@@ -767,7 +770,7 @@ header .container {
 .contact {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
-  background: var(--new-black-hell);
+  background: var(--main-color-hell);
   text-align: center;
 }
 .contact h2 {
@@ -777,7 +780,7 @@ header .container {
 }
 .contact h2 strong {
   font-weight: bold;
-  color: var(--new-green);
+  color: var(--sky-blue);
 }
 .contact-box {
   border: 2px solid var(--first-wht);
@@ -828,7 +831,7 @@ header .container {
 
 /* ------------ */
 .contact-section {
-  background-color: #1e1e1ef0;
+  background-color: var(--second-color);
   padding: 40px 40px;
   backdrop-filter: blur(15px);
   text-align: center;
@@ -837,7 +840,7 @@ header .container {
   overflow: hidden;
 }
 .contact-title {
-  color: var(--new-green);
+  color: var(--sky-blue);
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -847,7 +850,7 @@ header .container {
 }
 .contact-subtitle {
   font-size: 1.1rem;
-  color: #64748b;
+  color: var(--blue-grey);
   margin-bottom: 50px;
   line-height: 1.6;
 }
@@ -887,16 +890,16 @@ header .container {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 .linkedin .contact-icon {
-  background: var(--new-green);
+  background: var(--sky-blue);
 }
 .github .contact-icon {
-  background: var(--new-green);
+  background: var(--sky-blue);
 }
 .email .contact-icon {
-  background: var(--new-green);
+  background: var(--sky-blue);
 }
 /* .twitter .contact-icon {
-  background: var(--new-green);
+  background: var(--sky-blue);
 } */
 .contact-icon i {
   color: white;
@@ -939,7 +942,7 @@ header .container {
 }
 .contact-link:hover::before {
   opacity: 1;
-  background-color: var(--new-green-hell);
+  background-color: var(--sky-blue-hell);
   z-index: -1;
 }
 @media (max-width: 600px) {
@@ -985,7 +988,7 @@ header .container {
 
 /* Start Footer */
 footer {
-  background: var(--new-black);
+  background: var(--main-color);
   color: var(--first-wht);
   text-align: center;
   padding: 10px 0;
